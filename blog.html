@@ -5,7 +5,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="icon" href="img/profile.png" type="image/png">
 	<title>Blog</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
@@ -26,7 +26,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+					<a class="navbar-brand logo_h" href="index.html"><img class="logo" src="img/profile.png" alt=""></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
@@ -35,28 +35,20 @@
 					</button>
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav justify-content-end">
-							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-							<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-							<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+						<ul class="nav navbar-nav menu_nav d-flex justify-content-end">
 							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Pages</a>
-								<ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="portfolio-details.html">Portfolio Details</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown active">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Blog</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Blog Details</a></li>
 								</ul>
 							</li>
-							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html">
+									Say Hello
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -449,33 +441,44 @@
     
     <!--================Footer Area =================-->
 	<footer class="footer_area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="footer_top flex-column">
-                        <div class="footer_logo">
-                            <a href="#">
-                                <img src="img/logo.png" alt="">
-                            </a>
-                            <h4>Follow Me</h4>
-                        </div>
-                        <div class="footer_social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-behance"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row footer_bottom justify-content-center">
-                <p class="col-lg-8 col-sm-12 footer-text">
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="footer_top flex-column">
+						<div class="footer_logo">
+							<img style="width: 10%;; margin-bottom: 20px;" class="logo" src="img/profile.png" alt="">
+							
+							<h2><i>"Living, learning, & leveling up one day at a time."</i></h2>
+							<h4>Follow Me</h4>
+						</div>
+						<div class="footer_social">
+							<a data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500" class="fa-icon fa-icon-2x" target="_blank" href="https://twitter.com/ShubhamBartia" title="twitter">
+								<i class="fa fa-twitter"></i>
+							  </a>
+							  <a data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500" class="fa-icon fa-icon-2x" target="_blank" href="https://facebook.com/profile.php?id=100004000186076" title="facebook">
+								<i class="fa fa-facebook"></i>
+							  </a>
+							  <a data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500" class="fa-icon fa-icon-2x" target="_blank" href="https://github.com/shubhambartia" title="github">
+								<i class="fa fa-github"></i>
+							  </a>
+							  <a data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500" class="fa-icon fa-icon-2x" target="_blank" href="https://www.instagram.com/shauny_tricker/" title="instagram">
+								<i class="fa fa-instagram"></i>
+							  </a>
+							  <a data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500" class="fa-icon fa-icon-2x" target="_blank" href="https://www.linkedin.com/in/shubham-bartia-coder/" title="linkedin">
+								<i class="fa fa-linkedin"></i>
+							  </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer_bottom justify-content-center">
+				<p class="col-lg-8 col-sm-12 footer-text">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Shubham Bartia
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-            </div>
-        </div>
-    </footer>
+			</div>
+		</div>
+	</footer>
     <!--================End Footer Area =================-->
    
     <!-- Optional JavaScript -->
