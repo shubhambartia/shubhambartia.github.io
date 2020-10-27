@@ -178,6 +178,10 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- Chart for skills -->
+			<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+
 			<!-- <div class="row feature_inner">
 				<div class="col-lg-2 col-md-4">
 					<div class="feature_item">
@@ -537,7 +541,7 @@
         				<div class="row">
         					<div class="col-lg-4">
 								<img width="130" height="130" src="img/testimonials/sanjit.jpg" alt="">
-								<small>Marketing Manager, (Cafe Purani Jeans)</small>
+								<small>Marketing Manager, <br>(Cafe Purani Jeans)</small>
         					</div>
         					<div class="col-lg-8">
         						<div class="testi_text">
@@ -713,6 +717,36 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/theme.js"></script>
+	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	<script>
+		window.onload = function () {
+		
+		var chart = new CanvasJS.Chart("chartContainer", {
+			animationEnabled: true,
+			theme: "light2", // "light1", "light2", "dark1", "dark2"
+			data: [{        
+				type: "column",  
+				showInLegend: false, 
+				dataPoints: [      
+					{ y: 90, label: "HTML" },
+					{ y: 95,  label: "CSS" },
+					{ y: 80,  label: "JavaScript" },
+					{ y: 85,  label: "PHP" },
+					{ y: 95,  label: "MySQL" },
+					{ y: 70, label: "Java" },
+					{ y: 85,  label: "React" },
+					{ y: 50,  label: "CodeIgniter" },
+					{ y: 95,  label: "BootStrap" },
+					{ y: 80,  label: "Git" },
+					{ y: 85,  label: "JSON" }
+
+				]
+			}]
+		});
+		chart.render();
+		
+		}
+	</script>
 </body>
 
 </html>
