@@ -97,7 +97,7 @@
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    <form class="row contact_form" action="https://getform.io/f/8e863ff4-0150-487a-9726-7dd2ac919ea2" method="post" id="contactForm" novalidate="novalidate">
+                    <form class="row contact_form" action="https://getform.io/f/8e863ff4-0150-487a-9726-7dd2ac919ea2;" method="post" id="contactForm" novalidate="novalidate">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
@@ -192,6 +192,10 @@
     <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
     <script src="js/jquery.ajaxchimp.min.js"></script>
     <script src="js/mail-script.js"></script>
+    <script>
+        const form = document.getElementById("contactForm");
+        form.reset();
+    </script>
     <!--gmaps Js-->
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
     <script src="js/gmaps.min.js"></script>
